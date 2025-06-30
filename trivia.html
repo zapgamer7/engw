@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Climática</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/trivia.css">
+</head>
+<body>
+
+    <div id="overlay"></div>
+
+    <div id="sidebar">
+        <a href="principal.html"><i class="fa fa-home"></i> Início</a>
+        <a href="trivia.html"><i class="fa fa-gamepad"></i> Trivia</a>
+        <a href="perfil.html"><i class="fa fa-user"></i> Perfil</a>
+        <a href="login.html"><i class="fa fa-sign-out"></i> Sair</a>
+    </div>
+
+        <butto  n class="btn d-md-none bg-purple" style="color: white;" id="toggleSidebar">
+            <i class="fa fa-bars"></i> Menu
+        </butto>
+
+    <div class="container">
+        <header>
+            <h1>TRIVIA CLIMÁTICA</h1>
+            <p>Teste seus conhecimentos sobre mudanças climáticas</p>
+        </header>
+
+        <div class="quiz-container">
+            <div class="question">
+                <h2>1. Qual é a principal causa das mudanças climáticas?</h2>
+                <div class="options">
+                    <div class="option" data-correct="false">Erupções vulcânicas</div>
+                    <div class="option" data-correct="true">Atividades humanas</div>
+                    <div class="option" data-correct="false">Movimentos tectônicos</div>
+                    <div class="option" data-correct="false">Ciclos lunares</div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <h2>2. O que é o efeito estufa?</h2>
+                <div class="options">
+                    <div class="option" data-correct="false">Aumento da chuva</div>
+                    <div class="option" data-correct="true">Retenção de calor na atmosfera</div>
+                    <div class="option" data-correct="false">Formação de nuvens</div>
+                    <div class="option" data-correct="false">Explosões solares</div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <h2>3. Qual gás é o mais associado ao aquecimento global?</h2>
+                <div class="options">
+                    <div class="option" data-correct="false">Oxigênio</div>
+                    <div class="option" data-correct="true">Gás carbônico (CO₂)</div>
+                    <div class="option" data-correct="false">Hidrogênio</div>
+                    <div class="option" data-correct="false">Ozônio</div>
+                </div>
+            </div>
+            
+            <button id="submit-btn">Ver Resultado</button>
+        </div>
+        
+        <div class="results">
+            <h2>Seu Resultado</h2>
+            <div class="score">Você acertou <span id="score">0</span> de <span id="total">3</span> perguntas!</div>
+            <button id="restart-btn">Tentar Novamente</button>
+        </div>
+    </div>
+    
+    <script src="js/trivia.js"></script>
+    <script src="js/sideBar.js"></script>
+</body>
+</html>

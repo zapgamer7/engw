@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/principal.css">
+</head>
+<body>
+
+    <div id="overlay"></div>
+
+    <div id="sidebar">
+        <a href="principal.html"><i class="fa fa-home"></i> Início</a>
+        <a href="trivia.html"><i class="fa fa-gamepad"></i> Trivia</a>
+        <a href="perfil.html"><i class="fa fa-user"></i> Perfil</a>
+        <a href="login.html"><i class="fa fa-sign-out"></i> Sair</a>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar align-items-center">
+        <div class="container container-navbar">
+            <a class="navbar-brand" href="#">In Hot Water</a>
+            <button class="btn d-md-none bg-purple" id="toggleSidebar">
+                <i class="fa fa-bars"></i> Menu
+            </button>
+        </div>
+    </nav>
+
+    <div class="container mt-5 mb-5">
+
+        <div class="d-flex justify-content-center row">
+            <div class="col-md-8">
+                <div class="feed">
+                    <div class="share bg-purple">
+                        <div class="d-flex flex-row inputs p-2 py-4"><img class="rounded-circle" src="https://www.pintarecolorir.com.br/imagem/gatos-desafios/desenho-simples-gato-perfil.png" width="40"><input type="text" class="ml-1 form-control share-input" placeholder="Share your thoughts"></div>
+                        <div class="d-flex flex-row justify-content-between ml-1">
+                            <div class="d-flex flex-row publish-options">
+                                <div class="align-items-center p-2 share"><i class="fa fa-camera text-black-50"></i><span class="ml-1">Photo</span></div>
+                                <div class="align-items-center p-2 share"><i class="fa fa-video-camera text-black-50"></i><span class="ml-1">Video</span></div>
+                            </div>
+                            <div class="publish-button">
+                                <div class="align-items-center p-2 px-5 btn publish"><span class="ml-1">Publish</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="feed-post mt-2">
+                        <div class="bg-purple">
+                            <div class="d-flex flex-row justify-content-between align-items-start profile p-2">
+                                <div class="d-flex align-items-center"><img class="rounded-circle img-responsive" src="https://www.pintarecolorir.com.br/imagem/gatos-desafios/desenho-simples-gato-perfil.png" width="50" height="50">
+                                    <div class="d-flex flex-column ml-2">
+                                        <h6>Junior digital designer</h6><span class="time">23,456 followers</span></div>
+                                </div><i class="fa fa-ellipsis-h text-white-50 mt-2"></i></div>
+                            <div class="profile-content"><span class="p-2">Será que a terra ainda sera habitável daqui a 5 anos?</span>
+                                <div class="content-image"><img src="https://i.ytimg.com/vi/sgBF3XrJhvY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDN26C3Vg1sc-Dol6OYR86eTK4BXA"></div>
+                            </div>
+                            <div class="profile-engagements"></div>
+                        </div>
+                    </div>
+
+                    <div class="feed-post mt-2">
+                        <div class="bg-purple">
+                            <div class="d-flex flex-row justify-content-between align-items-start profile p-2">
+                                <div class="d-flex align-items-center"><img class="rounded-circle img-responsive" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" width="50" height="50">
+                                    <div class="d-flex flex-column ml-2">
+                                        <h6>noname</h6><span class="time">234 followers</span></div>
+                                </div><i class="fa fa-ellipsis-h text-white-50 mt-2"></i></div>
+                            <div class="profile-content"><span class="p-2">Com o aquecimento global o derretimento das geleiras vem deixando os animais dos polos sem habitat</span>
+                                <div class="content-image"><img src="https://www.notibras.com/site/wp-content/uploads/2015/08/urso-polar-aquecimento-global-bagarai.jpg"></div>
+                            </div>
+                            <div class="profile-engagements"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="js/sideBar.js"></script>
+</body>
+</html>
