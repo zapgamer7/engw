@@ -21,8 +21,8 @@ body {
     background-color: #19123B;
     color: #333;
     line-height: 1.6;
-    padding: 0; /* Altere de 20px para 0 */
-    margin: 0; /* Adicione esta linha */
+    padding: 0;
+    margin: 0;
 }
 
 .container {
@@ -185,7 +185,7 @@ body {
   padding: 20px;
 }
 
-/* Overlay */
+
 #overlay {
   position: fixed;
   top: 0;
@@ -204,7 +204,7 @@ body {
   visibility: visible;
 }
 
-/* Apenas esconde o sidebar em telas pequenas */
+
 @media (min-width: 768px) {
   #sidebar {
     transform: translateX(0);

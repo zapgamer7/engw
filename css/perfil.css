@@ -75,7 +75,6 @@ body {
   padding: 20px;
 }
 
-/* Overlay */
 #overlay {
   position: fixed;
   top: 0;
@@ -94,7 +93,6 @@ body {
   visibility: visible;
 }
 
-/* Apenas esconde o sidebar em telas pequenas */
 @media (min-width: 768px) {
   #sidebar {
     transform: translateX(0);
